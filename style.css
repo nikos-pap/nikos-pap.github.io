@@ -1,0 +1,107 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Open Sans", sans-serif;
+    color: #11101d;
+    font-size: 20px;
+}
+
+body {
+    background: #E4E9F7;
+}
+
+.skill-bar .skill-section {
+    display: inline-block;
+    height: 10px;
+    width: 50px;
+    border-radius: 4px;
+    margin-left: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.skill-bar .active-section {
+    background-image: linear-gradient(to top left, #1d1b31, #1156f7);
+}
+
+.skill-bar .inactive-section {
+    background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
+}
+
+.skill-bar {
+    padding: 0;
+}
+
+.info-card {
+    display: block;
+/*     #cccccc */
+    background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
+    padding: 20px;
+    padding-top: 45px;
+    position: relative;
+    width: max-content;
+/*     border: 2px solid black; */
+    margin: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.info-date {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-weight: bold;
+    background-image: linear-gradient(to top left, #1d1b31, #1156f7);
+    padding: 10px;
+    border-radius: 5px;
+/*     border: 2px solid black; */
+    color: #E4E9F7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.info-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.education-box {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.category {
+    font-size: 30px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.contact-label {
+    padding-right: 5px;
+}
+
+.profile-img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    width: 220px;
+}

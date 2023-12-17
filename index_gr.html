@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="el" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Προσωπική Σελίδα </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="set_skills()">
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name"></div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#About">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Γενικά</span>
+                </a>
+                <span class="tooltip">Γενικά</span>
+            </li>
+            <li>
+                <a href="#Education">
+                    <i class='bx bx-book'></i>
+                    <span class="links_name">Εκπαίδευση</span>
+                </a>
+                <span class="tooltip">Εκπαίδευση</span>
+            </li>
+            <li>
+                <a href="#Skills">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="links_name">Ικανότητες</span>
+                </a>
+                <span class="tooltip">Ικανότητες</span>
+            </li>
+            <li>
+                <a href="#Contact">
+                    <i class='bx bx-phone'></i>
+                    <span class="links_name">Επικοινωνία</span>
+                </a>
+                <span class="tooltip">Επικοινωνία</span>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-download'></i>
+                    <span class="links_name">Λήψη Βιογραφικού</span>
+                </a>
+                <span class="tooltip">Λήψη Βιογραφικού</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <div class="name_job">
+                        <div class="name">Nikolaos Papanikolaou</div>
+                        <div class="job">Computer Scientist and Engineer</div>
+                    </div>
+                </div>
+                <a class="lang-link" href="index.html" target="_self"><p>🇬🇷</p></a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section main-section">
+        <h1 class="title">Καλώς Ήρθατε στην προσωπική σελίδα του Παπανικολάου Νικόλαου</h1>
+        <img src="./images/profile.png" class="profile-img">
+    </section>
+    <section class="about-section main-section" id="About">
+        <h1 class="category">Γενικά</h1>
+        <p>Ονομάζομαι Παπανικολάου Νικόλαος, είμαι απόφοιτος του τμήματος Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής του Πανεπιστημίου Ιωαννίνων. Η ακαδημαϊκή μου πορεία με έχει εφοδιάσει με τις βασικές γνώσεις ανάπτυξης λογισμικού, επίλυσης προβλημάτων και μεθοδολογιών σχεδίασης. Με γνώμονα την έντονη περιέργεια που τροφοδοτεί τη συνεχή μάθηση και την προσαρμογή, είμαι ανοιχτός σε συνεργασίες και πρόθυμος να εξερευνήσω ευκαιρίες που μου επιτρέπουν να συνεισφέρω τις δεξιότητες και τις γνώσεις μου σε έργα που έχουν αντίκτυπο.</p>
+    </section>
+    <section class="skills-section main-section" id="Education">
+        <h1 class="category">Εκπαίδευση</h1>
+        <div class="education-box">
+            <div class="info-card">
+                <div class="info-date">Απρίλιος 2023</div>
+                <div class="info-title">M.Sc. Computer Science (Integrated Master)</div>
+                <hr />
+                <div class="info-description">Πανεπιστήμιο Ιωαννινών<br>
+                    Τμήμα Μηχανικών Ηλεκτρονικών Υπολογιστών και Πληροφορικής (2017-2023)<br>GPA: 8.17/10</div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section main-section" id="Skills">
+        <h1 class="category">Ικανότητες</h1>
+        <table class="skill-list">
+            <tr>
+                <td>Python</td>
+                <td class="skill-bar" rating=4></td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td class="skill-bar" rating=3></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td class="skill-bar" rating=3></td>
+            </tr>
+            <tr>
+                <td>Unity</td>
+                <td class="skill-bar" rating=2></td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td class="skill-bar" rating=2></td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td class="skill-bar" rating=2></td>
+            </tr>
+        </table>
+    </section>
+    <section class="contact-section main-section" id="Contact">
+        <h1 class="category">Επικοινωνία</h1>
+
+        <table>
+            <tr>
+                <td class="contact-label">Διεύθυνση:</td>
+                <td class="contact-info">Κόνιτσα, Ήπειρος, Ελλάδα, 44100</td>
+            </tr>
+            <tr>
+                <td class="contact-label">Email:</td>
+                <td><a href="mailto: nick.papanikolaou.cs@gmail.com">nick.papanikolaou.cs@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td class="contact-label">Σύνδεσμοι:</td>
+                <td>
+                    <a href="https://linkedin.com/in/nikolaos-papanikolaou-aba314204" target="_blank"><img src="images/linkedin_icon.png"
+                        width="25px"/></a>
+                    <a href="https://github.com/nikos-pap" target="_blank"><img src="images/github-mark.png" width="25px" /></a>
+                </td>
+            </tr>
+        </table>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -42,14 +42,12 @@ body {
 
 .info-card {
     display: block;
-/*     #cccccc */
     background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
     padding: 20px;
     padding-top: 45px;
     position: relative;
     width: max-content;
     max-width: 50%;
-/*     border: 2px solid black; */
     margin: 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -67,7 +65,6 @@ body {
     background-image: linear-gradient(to top left, #1d1b31, #1156f7);
     padding: 10px;
     border-radius: 5px;
-/*     border: 2px solid black; */
     color: #E4E9F7;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

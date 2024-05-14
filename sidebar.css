@@ -69,7 +69,8 @@
 
 .sidebar .nav-list {
     margin-top: 20px;
-    height: 100%;
+    height: calc(100% - 80px);
+    overflow-y: auto;
 }
 
 .sidebar li {

@@ -37,7 +37,8 @@ body {
 }
 
 .skill-bar {
-    padding: 0;
+    padding-top: 5px;
+    display:flex;
 }
 
 .info-card {
@@ -47,6 +48,7 @@ body {
     padding-top: 45px;
     position: relative;
     width: max-content;
+    min-width: 500px;
     max-width: 50%;
     margin: 10px;
     border-radius: 5px;

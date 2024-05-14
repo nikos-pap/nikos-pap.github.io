@@ -48,6 +48,7 @@ body {
     padding-top: 45px;
     position: relative;
     width: max-content;
+    max-width: 50%;
 /*     border: 2px solid black; */
     margin: 10px;
     border-radius: 5px;
@@ -79,7 +80,7 @@ body {
     font-size: 24px;
 }
 
-.education-box {
+.info-box {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -104,4 +105,13 @@ body {
     user-select: none;
     pointer-events: none;
     width: 220px;
+}
+
+.infocard-img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+    padding: 5px;
 }

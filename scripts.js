@@ -22,7 +22,7 @@ function set_skills() {
     for (var i = skills_list.length - 1; i >= 0; i--) {
         let rating = skills_list[i].getAttribute("rating");
         let bar = document.createElement("div");
-        bar.classList.add("skill-bar");
+        bar.classList.add("skill-point");
         skills_list[i].appendChild(bar);
         for (var j = 0; j < 5; j++) {
             let node = document.createElement("div");

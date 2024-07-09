@@ -49,11 +49,11 @@ body {
     -o-border-radius: 4px;
 }
 
-.skill-bar .active-section {
+.skill-point .active-section {
     background-image: linear-gradient(to top left, #1d1b31, #1156f7);
 }
 
-.skill-bar .inactive-section {
+.skill-point .inactive-section {
     background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
 }
 
@@ -151,6 +151,6 @@ only screen and (orientation: portrait){
     }
 
     .skill-bar .skill-section {
-        width: 30px;
+        width: calc(100 % / 6 * 1px);
     }
 }

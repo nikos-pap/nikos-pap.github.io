@@ -12,77 +12,72 @@
 
 <body onload="set_skills()">
     <div class="sidebar">
-        <div class="logo-details">
-            <div class="logo_name"></div>
-            <i class='bx bx-menu' id="btn"></i>
-        </div>
+        <div class='menu-button'><i class='bx bx-menu' id="btn" style="color: white;"></i></div>
+        <a href="#">
+            <img src="./images/profile.png" class="profile-img">
+        </a>
         <ul class="nav-list">
-            <li>
+            <li class="nav-item">
                 <a href="#About">
                     <i class='bx bx-user'></i>
                     <span class="links_name">About</span>
                 </a>
-                <span class="tooltip">About</span>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#Education">
                     <i class='bx bx-book'></i>
                     <span class="links_name">Education</span>
                 </a>
-                <span class="tooltip">Education</span>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#Jobs">
                     <i class='bx bx-briefcase'></i>
                     <span class="links_name">Work Experience</span>
                 </a>
-                <span class="tooltip">Work Experience</span>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#Skills">
                     <i class='bx bx-bar-chart-square'></i>
                     <span class="links_name">Skills</span>
                 </a>
-                <span class="tooltip">Skills</span>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="#Projects">
                     <i class='bx bx-file'></i>
                     <span class="links_name">Projects</span>
                 </a>
-                <span class="tooltip">Projects</span>
             </li>
-            <li>
+<!--             <li class="nav-item">
+                <a href="#Languages">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="links_name">Languages</span>
+                </a>
+            </li> -->
+            <li class="nav-item">
                 <a href="#Contact">
-                    <i class='bx bx-phone'></i>
+                    <i class='bx bxs-id-card' ></i>
                     <span class="links_name">Contact</span>
                 </a>
-                <span class="tooltip">Contact</span>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="">
                     <i class='bx bx-download'></i>
                     <span class="links_name">Download CV</span>
                 </a>
-                <span class="tooltip">Download CV</span>
-            </li>
-            <li class="profile">
-                <div class="profile-details">
-                    <div class="name_job">
-                        <div class="name">Papanikolaou Nikolaos</div>
-                        <div class="job">Computer Scientist and Engineer</div>
-                    </div>
-                </div>
-                <!-- <a class="lang-link" href="index.html" target="_blank"><p>🇬🇷</p></a> -->
-                <a class="lang-link" href="index_gr.html" target="_self"><p>🇬🇧</p></a>
             </li>
         </ul>
+        <div class="profile">
+            <div class="profile-details">
+                <div class="name">Papanikolaou Nikolaos</div>
+                <div class="job">Computer Scientist and Engineer</div>
+            </div>
+            <a class="lang-link" href="index_gr.html" target="_self">🇬🇧</a>
+        </div>
     </div>
     <section class="home-section main-section">
         <h1 class="title">
             Welcome to Nikolaos' Papanikolaou Personal Page
         </h1>
-        <img src="./images/profile.png" class="profile-img">
     </section>
     <section class="about-section main-section" id="About">
         <h1 class="category">About</h1>
@@ -106,9 +101,34 @@
         <div class="info-box">
             <div class="info-card">
                 <div class="info-date">July 2021 - August 2021</div>
-                <div class="info-title">Terracom S.A. (Internship)</div>
+                <div class="info-title">
+                    <a target="_blank" href="https://www.terracom.gr/"><i class='bx bx-link'></i>Terracom S.A.</a> (Internship)</div>
                 <hr/>
-                <div class="info-description">Worked on a video conference web project using Typescript, Angular and WebRTC.</div>
+            <div class="info-description">
+            Worked on a video conference web project using Typescript, Angular and WebRTC.</div>
+            </div>
+        </div>
+    </section>
+    <section class="skills-section main-section" id="Projects">
+        <h1 class="category">Projects</h1>
+        <div class="info-box">
+            <div class="info-card">
+                <div class="info-date">October 2022 - Present</div>
+                <div class="info-title"><a href="https://github.com/dimosgeo/LoLAutomation" target="_blank"><i class='bx bx-link'></i>LOL Assistant</a></div>
+                <hr/>
+                <div class="info-description">A python tool for assisting players in the game "League of Legends".</div>
+                <hr>
+                <img src="https://raw.githubusercontent.com/dimosgeo/LoLAutomation/main/imgs/GUI.png" class="infocard-img">
+            </div>
+        </div>
+        <div class="info-box">
+            <div class="info-card">
+                <div class="info-date">February 2023 - Present</div>
+                <div class="info-title"><a href="https://github.com/nikos-pap/MemSpy" target="_blank"><i class='bx bx-link'></i>Mem Scanner</a></div>
+                <hr/>
+                <div class="info-description">A python tool made for application memory manipulation.</div>
+                <hr>
+                <img src="https://raw.githubusercontent.com/nikos-pap/MemSpy/main/imgs/GUI.png" class="infocard-img">
             </div>
         </div>
     </section>
@@ -141,29 +161,13 @@
             </tr>
         </table>
     </section>
-    <section class="skills-section main-section" id="Projects">
-        <h1 class="category">Projects</h1>
-        <div class="info-box">
-            <div class="info-card">
-                <div class="info-date">October 2022 - Present</div>
-                <div class="info-title"><a href="https://github.com/dimosgeo/LoLAutomation" target="_blank">LOL Assistant</a></div>
-                <hr/>
-                <div class="info-description">A python tool for assisting players in the game "League of Legends".</div>
-                <hr>
-                <img src="https://raw.githubusercontent.com/dimosgeo/LoLAutomation/main/imgs/GUI.png" class="infocard-img">
-            </div>
-        </div>
-        <div class="info-box">
-            <div class="info-card">
-                <div class="info-date">February 2023 - Present</div>
-                <div class="info-title"><a href="https://github.com/nikos-pap/MemSpy" target="_blank">Mem Scanner</a></div>
-                <hr/>
-                <div class="info-description">A python tool made for application memory manipulation.</div>
-                <hr>
-                <img src="https://raw.githubusercontent.com/nikos-pap/MemSpy/main/imgs/GUI.png" class="infocard-img">
-            </div>
-        </div>
-    </section>
+<!--     <section class="skills-section main-section" id="Languages">
+        <h1 class="category">Languages</h1>
+        <ul>
+            <li>Greek, Native</li>
+            <li>English, C2 Certificate in English (Hellenic American Union)</li>
+        </ul>
+    </section> -->
     <section class="contact-section main-section" id="Contact">
         <h1 class="category">Contact Info</h1>
 

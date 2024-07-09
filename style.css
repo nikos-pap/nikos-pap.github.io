@@ -72,7 +72,6 @@ body {
 .info-card {
     display: block;
     background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
-    text-align: justify;
     padding: 20px;
     padding-top: 45px;
     position: relative;
@@ -104,6 +103,7 @@ body {
 .info-title {
     font-weight: bold;
     font-size: 24px;
+    text-align: left;
 }
 
 .info-box {
@@ -138,11 +138,13 @@ body {
 a:link {
   color: royalblue;
   font-size: inherit;
+  text-decoration: none;
 }
 
 a:visited {
   color: midnightblue;
   font-size: inherit;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1000px),

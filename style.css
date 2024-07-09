@@ -37,29 +37,36 @@ body {
     margin-top: 10px;
 }
 
-.skill-bar .skill-section {
-    display: inline-block;
+.skill-bar .skill-point {
     height: 10px;
-    width: 50px ;
     border-radius: 4px;
     margin-left: 5px;
+    flex: 1;
+    display: flex;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
 
-.skill-point .active-section {
+.skill-rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 300px;
+}
+
+.skill-rating .active-point {
     background-image: linear-gradient(to top left, #1d1b31, #1156f7);
 }
 
-.skill-point .inactive-section {
+.skill-rating .inactive-point {
     background: linear-gradient(to top left,  #aaaaaa,  #dddddd);
 }
 
 .skill-bar {
     padding-top: 5px;
-    display:flex;
+    width: 100%;
 }
 
 .info-card {

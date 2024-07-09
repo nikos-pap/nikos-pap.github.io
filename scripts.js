@@ -22,15 +22,15 @@ function set_skills() {
     for (var i = skills_list.length - 1; i >= 0; i--) {
         let rating = skills_list[i].getAttribute("rating");
         let bar = document.createElement("div");
-        bar.classList.add("skill-point");
+        bar.classList.add("skill-rating");
         skills_list[i].appendChild(bar);
         for (var j = 0; j < 5; j++) {
             let node = document.createElement("div");
-            node.classList.add("skill-section");
+            node.classList.add("skill-point");
             if (j < rating) {
-                node.classList.add("active-section");
+                node.classList.add("active-point");
             } else {
-                node.classList.add("inactive-section");
+                node.classList.add("inactive-point");
             }
             bar.appendChild(node);
         }

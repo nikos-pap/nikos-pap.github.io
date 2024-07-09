@@ -21,19 +21,6 @@
     transition: all ease 2s;
 }
 
-@media only screen and (max-width: 1000px),
-only screen and (hover: none) and (pointer: coarse),
-only screen and (orientation: portrait){
-    .main-section {
-        width: 100%;
-        left: 0;
-    }
-    
-    .info-card {
-        max-width: 100%;
-    }
-}
-
 body {
     background: #E4E9F7;
 }
@@ -53,7 +40,7 @@ body {
 .skill-bar .skill-section {
     display: inline-block;
     height: 10px;
-    width: 50px;
+    width: 50px ;
     border-radius: 4px;
     margin-left: 5px;
     -webkit-border-radius: 4px;
@@ -83,7 +70,6 @@ body {
     padding-top: 45px;
     position: relative;
     width: max-content;
-    min-width: 500px;
     margin: 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -150,4 +136,21 @@ a:link {
 a:visited {
   color: midnightblue;
   font-size: inherit;
+}
+
+@media only screen and (max-width: 1000px),
+only screen and (hover: none) and (pointer: coarse),
+only screen and (orientation: portrait){
+    .main-section {
+        width: 100%;
+        left: 0;
+    }
+    
+    .info-card {
+        max-width: 100%;
+    }
+
+    .skill-bar .skill-section {
+        width: 30px;
+    }
 }

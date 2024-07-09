@@ -7,14 +7,24 @@
 .sidebar {
     position: fixed;
     z-index: 50;
-    transition: all 0.5s ease;
+/*     transition: all 0.5s ease-in; */
     background: var(--main-background-color);
     top: 0;
     left: 0;
-    bottom: 0;
     padding: 5px;
     overflow: hidden;
     width: 78px;
+}
+
+@keyframes show-sidebar {
+  from{
+    width: 78px;
+    height: 78px;
+        }
+  to {
+    width: 78px;
+    height: 100%;
+  }
 }
 
 .sidebar .menu-button {
@@ -56,13 +66,21 @@
     height: auto;
 }
 
-.sidebar .profile-img {
+.sidebar .profile-img img { 
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     object-fit: cover;
     margin: auto;
     transition: all ease 0.5s;
     user-select: none;
+    width: 100%;
+}
+
+.sidebar .profile-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
 }
 
 .sidebar li { 
@@ -138,9 +156,19 @@
 }
 
 @media only screen and (min-width: 1000px) and (hover: hover) and (pointer: fine) and (orientation: landscape) {
+    .sidebar {
+        width: 78px;
+        bottom: 0;
+        animation: show-sidebar;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        transition: all 0.5s ease;
+    }
+
     .sidebar:hover {
         width: 250px;
         overflow-y: auto;
+        transition: all 0.5s ease;
     }
 
     .sidebar li.nav-item a:hover {
@@ -213,10 +241,12 @@ only screen and (orientation: portrait) {
         position: sticky;
         height: 78px;
         width: 100%;
+        transition: all 0.5s ease;
     }
 
     .sidebar .profile-img {
-        height: 100%;
+        height: 78px;
+        width:  78px;
     }
 
     .sidebar .nav-list {

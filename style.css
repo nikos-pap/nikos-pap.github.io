@@ -84,11 +84,11 @@ body {
     position: relative;
     width: max-content;
     margin: 10px;
-    border-radius: 5px;
+/*     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -o-border-radius: 5px; */
 }
 
 .info-date {
@@ -99,8 +99,8 @@ body {
     font-weight: bold;
     background-image: linear-gradient(to top left, #1d1b31, #1156f7);
     padding: 10px;
-    border-radius: 5px;
     color: #E4E9F7;
+    border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -149,12 +149,12 @@ body {
 }
 
 .main-section a:visited {
-  color: black;
+  color: var(--second-background-color);
   font-size: inherit;
   text-decoration: none;
 }
 
-.main-section a:focus, .main-section a:active{
+.main-section a:hover, .main-section a:active{
     background: linear-gradient(to top left, #1d1b31, #1156f7);
     background-clip: text;
     -webkit-background-clip: text;

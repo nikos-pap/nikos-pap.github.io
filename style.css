@@ -143,15 +143,15 @@ body {
 }
 
 .main-section a:link {
-  color: royalblue;
-  font-size: inherit;
-  text-decoration: none;
+    color: royalblue;
+    font-size: inherit;
+    text-decoration: none;
 }
 
 .main-section a:visited {
-  color: var(--second-background-color);
-  font-size: inherit;
-  text-decoration: none;
+    color: darkblue;
+    font-size: inherit;
+    text-decoration: none;
 }
 
 .main-section a:hover, .main-section a:active{
@@ -181,6 +181,6 @@ only screen and (orientation: portrait){
     }
 
     .skill-bar .skill-section {
-        width: calc(100 % / 6 * 1px);
+        width: calc(100% / 6 * 1px);
     }
 }

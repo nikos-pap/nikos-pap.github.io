@@ -1,0 +1,119 @@
+:root {
+    --main-background-color: #11101D;
+    --second-background-color: #1D1B31;
+    --highlight-background-color: #E4E9F7;
+    --highlight-border-color: royalblue;
+    --link-color: lightcoral;
+}
+
+* {
+	font-family: "Poppins", "Open Sans", sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	align-items: center;
+	background-color: var(--second-background-color);
+}
+
+.main {
+	background-color: var(--highlight-background-color);
+	box-shadow: 2px 0px 10px var(--highlight-border-color), -2px 0px 10px var(--highlight-border-color);
+	max-width: 80vw;
+	min-height: 80vh;
+	margin-inline: auto;
+	padding: 20px;
+}
+
+.main section {
+	margin-bottom: 20px;
+}
+
+.main h1 {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.main h2 {
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+a.styled-link::before {
+    font-family: boxicons;
+    content: '\eb3c';
+}
+
+.main a.styled-link:link {
+	color: var(--highlight-border-color);
+	font-size: inherit;
+	text-decoration: none;
+}
+
+.main a.styled-link:visited {
+	color: var(--link-color);
+	font-size: inherit;
+	text-decoration: none;
+}
+
+.main a.contact-link {
+	color: var(--main-background-color);
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.main a.contact-link *{
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+.main a:hover, a:active{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:  transparent;
+	background: linear-gradient(to top left, var(--main-background-color), var(--highlight-border-color));
+	background-clip: text;
+	color: transparent;
+}
+
+.main .language-info {
+	margin-bottom: 20px;
+}
+
+.main .main-section {
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+    transition: all 0.5s ease;
+    margin-inline: auto;
+}
+
+.main .main-section .text {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.main .profile-img img {
+	display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 10%;
+    object-fit: cover;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 230px;
+    margin-inline: auto;
+}
+
+.main .profile-img {
+	width: 100%;
+}
+
+.main .skill-list {
+	list-style-type: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <body>
+        <div class="nav-bar">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="controls">
+                <li class="dropdown control-button">
+                    <i class='bx bx-globe'></i>
+                    <ul class="dropdown-list">
+                        <li><a href="projects_gr.html">Greek</a></li>
+                        <li><a class="active">English</a></li>
+                    </ul>
+                <li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 class="category">Notable Projects</h1>
+            <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/nikos-pap/MemSpy/main/imgs/GUI.png" alt="Project Image">
+                    <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/nikos-pap/MemSpy" target="_blank">Mem Scanner</a>
+                        </div>
+                        <div class="overlay-text">
+                            A python tool made for simple application memory manipulation, based on CheatEngine. The goal of this project is to understand how to read and manipulate memory data, addresses and the memory structure of programs.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/dimosgeo/LoLAutomation/main/imgs/GUI.png" alt="Project Image">
+                    <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/dimosgeo/LoLAutomation" target="_blank">LOL Assistant</a>
+                        </div>
+                        <div class="overlay-text">
+                            A python tool for assisting players in the game "League of Legends". It uses scrapping to collect data and then presents them to assist players on their gaming experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="styled-link" src="https://raw.githubusercontent.com/nikos-pap/LSTM-Bone-Labelling/main/design.png" alt="Project Image"/>
+                     <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/dimosgeo/LoLAutomation" target="_blank">Bone Labelling Demo</a>
+                        </div>
+                        <div class="overlay-text">
+                           This is a demo implementation of the network design proposed in my thesis titled "Deep Persistent Bone Labelling for Efficient Character Animation" written in Python. This implementation leverages <i>LSTM neural networks</i> and the <i>Attention mechanism</i> to achieve persistent and reliable bone identification across complex skeletal structures, enabling more realistic and consistent animations.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/nikos-pap/Lab1-Graphics/main/Images/ExampleImage.png" alt="Project Image"/>
+                     <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/nikos-pap/Lab1-Graphics" target="_blank">Object Collision Demo</a>
+                        </div>
+                        <div class="overlay-text">
+                           A project developed to simulate object generation and collisions as part of my university Graphics course. The goal was to understand how to use shaders to create simple scenes and apply basic physics rules for realistic interactions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-indicator"></div>
+            <button class="carousel-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+            <button class="carousel-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+        </div>
+        </div>
+    </body>
+<script src="scripts/script.js"></script>
+</html>

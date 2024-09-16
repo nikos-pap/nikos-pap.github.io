@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Πρόξεκτ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+    <body>
+        <div class="nav-bar">
+            <ul class="navigation">
+                <li><a href="index_gr.html">Αρχική</a></li>
+                <li><a href="#" class="active">Πρόξεκτ</a></li>
+                <li><a href="skills_gr.html">Δεξιότητες</a></li>
+                <li><a href="contact_gr.html">Επικοινωνία</a></li>
+            </ul>
+            <ul class="controls">
+                <li class="dropdown control-button">
+                    <i class='bx bx-globe'></i>
+                    <ul class="dropdown-list">
+                        <li><a class="active">Ελληνικά</a></li>
+                        <li><a href="projects.html">Αγγλικά</a></li>
+                    </ul>
+                <li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 class="category">Σημαντικά Πρότζεκτ</h1>
+            <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/nikos-pap/MemSpy/main/imgs/GUI.png" alt="Project Image">
+                    <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/nikos-pap/MemSpy" target="_blank">Mem Scanner</a>
+                        </div>
+                        <div class="overlay-text">
+                            Ένα εργαλείο ανεπτυγμένο στην γλώσσα Python για την διαχείρηση μνήμης προγραμμάτων, βασισμένο στην ιδέα της εφαρμογής CheatEngine. Στόχος της εφαρμογής είναι η κατανόηση της διαχείρισης της δομής, των διευθύνσεων και των δεδομένων της μνήμης των προγραμμάτων.  
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/dimosgeo/LoLAutomation/main/imgs/GUI.png" alt="Project Image">
+                    <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/dimosgeo/LoLAutomation" target="_blank">LOL Assistant</a>
+                        </div>
+                        <div class="overlay-text">
+                            Ένα εργαλείο ανεπτυγμένο στην γλώσσα Python για να προσφέρει βοήθεια στους παίκτες του παιχνιδιού "League of Legends". Χρησιμοποιεί scraping για την συλλογή δεδομένων και τα παρουσιάζει στους παίκτες για να βελτιώσει την εμπειρία τους.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="styled-link" src="https://raw.githubusercontent.com/nikos-pap/LSTM-Bone-Labelling/main/design.png" alt="Project Image"/>
+                     <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/dimosgeo/LoLAutomation" target="_blank">Bone Labelling Demo</a>
+                        </div>
+                        <div class="overlay-text">
+                           Αυτή είναι μια δοκιμαστιή υλοποίηση του δικτύου που αναφέρω στη διπλωματική μου με τίτλο "Βαθιά επίμονη σήμανση οστών για αποτελεσματική κίνηση χαρακτήρων" ανεπτυγμένο σε Python. Αυτή η υλοποίηση αξιοποιεί τα <i>Νευρωνικά Δίκτυα LSTM</i> και τον <i>Μηχανισμό Προσοχής</i> για την επίτευξη επίμονης και αξιόπιστης αναγνώρισης οστών σε περίπλοκες σκελετικές δομές, επιτρέποντας πιο ρεαλιστικές και συνεπείς κινούμενες εικόνες.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img class="carousel-image" src="https://raw.githubusercontent.com/nikos-pap/Lab1-Graphics/main/Images/ExampleImage.png" alt="Project Image"/>
+                     <div class="overlay-container">
+                        <div class="overlay-title">
+                            <a class="styled-link" href="https://github.com/nikos-pap/Lab1-Graphics" target="_blank">Object Collision Demo</a>
+                        </div>
+                        <div class="overlay-text">
+                           Μία εργασία που αναπτύχθηκε για την προσομοίωση δημιουργίας αντικειμένων και συγκρούσεων ως μέρος του πανεπιστημιακού μαθήματος Γραφικών. Ο στόχος ήταν να κατανοήσουμε πώς να χρησιμοποιούμε shaders για να δημιουργήσουμε απλές σκηνές και να εφαρμόζουμε βασικούς κανόνες φυσικής για ρεαλιστικές αλληλεπιδράσεις.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dot-indicator"></div>
+            <button class="carousel-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+            <button class="carousel-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+        </div>
+        </div>
+    </body>
+<script src="scripts/script.js"></script>
+</html>
